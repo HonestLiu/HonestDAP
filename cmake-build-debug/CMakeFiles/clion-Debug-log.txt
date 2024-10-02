@@ -1,0 +1,4 @@
+"D:\AppData\JetBrains\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/AppData/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S D:\Develop\STM32\RTT\STM32F4_DAP -B D:\Develop\STM32\RTT\STM32F4_DAP\cmake-build-debug
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: D:/Develop/STM32/RTT/STM32F4_DAP/cmake-build-debug

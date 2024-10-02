@@ -1,0 +1,584 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:25 (PROJECT)"
+    message: |
+      The target system is: Generic -  - cortex-m4
+      The host system is: Windows - 10.0.22635 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:25 (PROJECT)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/ConEmu/ConEmu/../../../tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-gcc.exe 
+      Build flags: -mcpu=cortex-m4;-mthumb;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-ffunction-sections;-fdata-sections;-Dgcc;-O0;-gdwarf-2;-g
+      Id flags:  
+      
+      The output was:
+      1
+      d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libg.a(lib_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x16): undefined reference to `_exit'
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:25 (PROJECT)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/ConEmu/ConEmu/../../../tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-gcc.exe 
+      Build flags: -mcpu=cortex-m4;-mthumb;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-ffunction-sections;-fdata-sections;-Dgcc;-O0;-gdwarf-2;-g
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        D:/Develop/STM32/RTT/STM32F4_DAP/cmake-build-debug/CMakeFiles/3.28.6/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:25 (PROJECT)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/ConEmu/ConEmu/../../../tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-g++.exe 
+      Build flags: -mcpu=cortex-m4;-mthumb;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-ffunction-sections;-fdata-sections;-Dgcc;-O0;-gdwarf-2;-g
+      Id flags:  
+      
+      The output was:
+      1
+      d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libg.a(lib_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x16): undefined reference to `_exit'
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:25 (PROJECT)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/ConEmu/ConEmu/../../../tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-g++.exe 
+      Build flags: -mcpu=cortex-m4;-mthumb;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-ffunction-sections;-fdata-sections;-Dgcc;-O0;-gdwarf-2;-g
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is GNU, found in:
+        D:/Develop/STM32/RTT/STM32F4_DAP/cmake-build-debug/CMakeFiles/3.28.6/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1155 (message)"
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:25 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-none-eabi-gcc.exe (GNU Arm Embedded Toolchain 10.3-2021.10) 10.3.1 20210824 (release)
+      Copyright (C) 2020 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:60 (try_compile)"
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:25 (PROJECT)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/Develop/STM32/RTT/STM32F4_DAP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bfsn8d"
+      binary: "D:/Develop/STM32/RTT/STM32F4_DAP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bfsn8d"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Dgcc -O0 -gdwarf-2 -g"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wl,--gc-sections,-Map=rt-thread.map,-cref,-u,Reset_Handler -T D:/Develop/STM32/RTT/STM32F4_DAP/board/linker_scripts/link.lds"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Develop/STM32/RTT/STM32F4_DAP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bfsn8d'
+        
+        Run Build Command(s): "D:/AppData/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_6bd7a
+        [1/2] D:\\AppData\\RT-ThreadStudio\\platform\\env_released\\env\\tools\\ConEmu\\ConEmu\\..\\..\\..\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\arm-none-eabi-gcc.exe   -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Dgcc -O0 -gdwarf-2 -g  -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_6bd7a.dir/CMakeCCompilerABI.c.obj -c "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c"
+        Using built-in specs.
+        COLLECT_GCC=D:\\AppData\\RT-ThreadStudio\\platform\\env_released\\env\\tools\\ConEmu\\ConEmu\\..\\..\\..\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\arm-none-eabi-gcc.exe
+        Target: arm-none-eabi
+        Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-ffunction-sections' '-fdata-sections' '-D' 'gcc' '-O0' '-gdwarf-2' '-g' '-v' '-o' 'CMakeFiles/cmTC_6bd7a.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'
+         d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../arm-none-eabi -D__USES_INITFINI__ -D gcc D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mlibarch=armv7e-m+fp -march=armv7e-m+fp -auxbase-strip CMakeFiles/cmTC_6bd7a.dir/CMakeCCompilerABI.c.obj -gdwarf-2 -g -O0 -version -fdiagnostics-color=always -ffunction-sections -fdata-sections -o C:\\Users\\Hones\\AppData\\Local\\Temp\\ccPU5iWZ.s
+        GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+        	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+        ignoring nonexistent directory "d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"
+        ignoring duplicate directory "d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+        ignoring duplicate directory "d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+        ignoring nonexistent directory "d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../arm-none-eabi/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include
+         d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+         d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+        End of search list.
+        GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+        	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: f3937ce18b4177bfd408ca565336596a
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-ffunction-sections' '-fdata-sections' '-D' 'gcc' '-O0' '-gdwarf-2' '-g' '-v' '-o' 'CMakeFiles/cmTC_6bd7a.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'
+         d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_6bd7a.dir/CMakeCCompilerABI.c.obj C:\\Users\\Hones\\AppData\\Local\\Temp\\ccPU5iWZ.s
+        GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+        COMPILER_PATH=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-ffunction-sections' '-fdata-sections' '-D' 'gcc' '-O0' '-gdwarf-2' '-g' '-v' '-o' 'CMakeFiles/cmTC_6bd7a.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'\x0d
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\AppData\\RT-ThreadStudio\\platform\\env_released\\env\\tools\\ConEmu\\ConEmu\\..\\..\\..\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Dgcc -O0 -gdwarf-2 -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wl,--gc-sections,-Map=rt-thread.map,-cref,-u,Reset_Handler -T D:/Develop/STM32/RTT/STM32F4_DAP/board/linker_scripts/link.lds -v CMakeFiles/cmTC_6bd7a.dir/CMakeCCompilerABI.c.obj -o cmTC_6bd7a   && cd ."
+        Using built-in specs.
+        COLLECT_GCC=D:\\AppData\\RT-ThreadStudio\\platform\\env_released\\env\\tools\\ConEmu\\ConEmu\\..\\..\\..\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\arm-none-eabi-gcc.exe
+        COLLECT_LTO_WRAPPER=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe
+        Target: arm-none-eabi
+        Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+        COMPILER_PATH=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-D' 'gcc' '-O0' '-gdwarf-2' '-g' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-ffunction-sections' '-fdata-sections' '-T' 'D:/Develop/STM32/RTT/STM32F4_DAP/board/linker_scripts/link.lds' '-v' '-o' 'cmTC_6bd7a' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'
+         d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Hones\\AppData\\Local\\Temp\\cc56bjf8.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lg -plugin-opt=-pass-through=-lc --sysroot=d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../arm-none-eabi -X -o cmTC_6bd7a d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1 -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib --gc-sections -Map=rt-thread.map -cref -u Reset_Handler CMakeFiles/cmTC_6bd7a.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lg -lc --end-group d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o -T D:/Develop/STM32/RTT/STM32F4_DAP/board/linker_scripts/link.lds
+        d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol Reset_Handler; defaulting to 08000000
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-D' 'gcc' '-O0' '-gdwarf-2' '-g' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-ffunction-sections' '-fdata-sections' '-T' 'D:/Develop/STM32/RTT/STM32F4_DAP/board/linker_scripts/link.lds' '-v' '-o' 'cmTC_6bd7a' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'\x0d
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:130 (message)"
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:25 (PROJECT)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/include]
+          add: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+          add: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include]
+        end of search list found
+        collapse include dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/include] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/include]
+        collapse include dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+        collapse include dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/include]
+        implicit include dirs: [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/include;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/include-fixed;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:162 (message)"
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:25 (PROJECT)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-none-eabi-ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'D:/Develop/STM32/RTT/STM32F4_DAP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bfsn8d']
+        ignore line: []
+        ignore line: [Run Build Command(s): "D:/AppData/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_6bd7a]
+        ignore line: [[1/2] D:\\AppData\\RT-ThreadStudio\\platform\\env_released\\env\\tools\\ConEmu\\ConEmu\\..\\..\\..\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\arm-none-eabi-gcc.exe   -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Dgcc -O0 -gdwarf-2 -g  -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_6bd7a.dir/CMakeCCompilerABI.c.obj -c "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=D:\\AppData\\RT-ThreadStudio\\platform\\env_released\\env\\tools\\ConEmu\\ConEmu\\..\\..\\..\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\arm-none-eabi-gcc.exe]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-ffunction-sections' '-fdata-sections' '-D' 'gcc' '-O0' '-gdwarf-2' '-g' '-v' '-o' 'CMakeFiles/cmTC_6bd7a.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp']
+        ignore line: [ d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../arm-none-eabi -D__USES_INITFINI__ -D gcc D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mlibarch=armv7e-m+fp -march=armv7e-m+fp -auxbase-strip CMakeFiles/cmTC_6bd7a.dir/CMakeCCompilerABI.c.obj -gdwarf-2 -g -O0 -version -fdiagnostics-color=always -ffunction-sections -fdata-sections -o C:\\Users\\Hones\\AppData\\Local\\Temp\\ccPU5iWZ.s]
+        ignore line: [GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"]
+        ignore line: [ignoring nonexistent directory "d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"]
+        ignore line: [ignoring duplicate directory "d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"]
+        ignore line: [ignoring nonexistent directory "d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../arm-none-eabi/usr/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include]
+        ignore line: [ d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+        ignore line: [ d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: f3937ce18b4177bfd408ca565336596a]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-ffunction-sections' '-fdata-sections' '-D' 'gcc' '-O0' '-gdwarf-2' '-g' '-v' '-o' 'CMakeFiles/cmTC_6bd7a.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp']
+        ignore line: [ d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_6bd7a.dir/CMakeCCompilerABI.c.obj C:\\Users\\Hones\\AppData\\Local\\Temp\\ccPU5iWZ.s]
+        ignore line: [GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621]
+        ignore line: [COMPILER_PATH=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-ffunction-sections' '-fdata-sections' '-D' 'gcc' '-O0' '-gdwarf-2' '-g' '-v' '-o' 'CMakeFiles/cmTC_6bd7a.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'\x0d]
+        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\AppData\\RT-ThreadStudio\\platform\\env_released\\env\\tools\\ConEmu\\ConEmu\\..\\..\\..\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Dgcc -O0 -gdwarf-2 -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wl --gc-sections -Map=rt-thread.map -cref -u Reset_Handler -T D:/Develop/STM32/RTT/STM32F4_DAP/board/linker_scripts/link.lds -v CMakeFiles/cmTC_6bd7a.dir/CMakeCCompilerABI.c.obj -o cmTC_6bd7a   && cd ."]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=D:\\AppData\\RT-ThreadStudio\\platform\\env_released\\env\\tools\\ConEmu\\ConEmu\\..\\..\\..\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\arm-none-eabi-gcc.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) ]
+        ignore line: [COMPILER_PATH=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-D' 'gcc' '-O0' '-gdwarf-2' '-g' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-ffunction-sections' '-fdata-sections' '-T' 'D:/Develop/STM32/RTT/STM32F4_DAP/board/linker_scripts/link.lds' '-v' '-o' 'cmTC_6bd7a' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp']
+        link line: [ d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Hones\\AppData\\Local\\Temp\\cc56bjf8.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lg -plugin-opt=-pass-through=-lc --sysroot=d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../arm-none-eabi -X -o cmTC_6bd7a d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1 -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib --gc-sections -Map=rt-thread.map -cref -u Reset_Handler CMakeFiles/cmTC_6bd7a.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lg -lc --end-group d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o -T D:/Develop/STM32/RTT/STM32F4_DAP/board/linker_scripts/link.lds]
+          arg [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll] ==> ignore
+          arg [-plugin-opt=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\Hones\\AppData\\Local\\Temp\\cc56bjf8.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lg] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [--sysroot=d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../arm-none-eabi] ==> ignore
+          arg [-X] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_6bd7a] ==> ignore
+          arg [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o] ==> obj [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o]
+          arg [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o] ==> obj [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o]
+          arg [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o] ==> obj [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o]
+          arg [-Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard] ==> dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard]
+          arg [-Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard] ==> dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard]
+          arg [-Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard] ==> dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard]
+          arg [-Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1] ==> dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1]
+          arg [-Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc] ==> dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc]
+          arg [-Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib] ==> dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib]
+          arg [-Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib] ==> dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib]
+          arg [--gc-sections] ==> ignore
+          arg [-Map=rt-thread.map] ==> ignore
+          arg [-cref] ==> ignore
+          arg [-u] ==> ignore
+          arg [Reset_Handler] ==> ignore
+          arg [CMakeFiles/cmTC_6bd7a.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [--start-group] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lg] ==> lib [g]
+          arg [-lc] ==> lib [c]
+          arg [--end-group] ==> ignore
+          arg [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o] ==> obj [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o]
+          arg [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o] ==> obj [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o]
+          arg [-T] ==> ignore
+          arg [D:/Develop/STM32/RTT/STM32F4_DAP/board/linker_scripts/link.lds] ==> ignore
+        collapse obj [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o]
+        collapse obj [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o]
+        collapse obj [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o]
+        collapse obj [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o]
+        collapse obj [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o]
+        collapse library dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard]
+        collapse library dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/lib/thumb/v7e-m+fp/hard]
+        collapse library dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/lib/thumb/v7e-m+fp/hard]
+        collapse library dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1]
+        collapse library dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc]
+        collapse library dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/lib]
+        collapse library dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/lib]
+        implicit libs: [gcc;g;c]
+        implicit objs: [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o]
+        implicit dirs: [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/lib/thumb/v7e-m+fp/hard;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:60 (try_compile)"
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:25 (PROJECT)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/Develop/STM32/RTT/STM32F4_DAP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kj69tr"
+      binary: "D:/Develop/STM32/RTT/STM32F4_DAP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kj69tr"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Dgcc -O0 -gdwarf-2 -g"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: " -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wl,--gc-sections,-Map=rt-thread.map,-cref,-u,Reset_Handler -T D:/Develop/STM32/RTT/STM32F4_DAP/board/linker_scripts/link.lds"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Develop/STM32/RTT/STM32F4_DAP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kj69tr'
+        
+        Run Build Command(s): "D:/AppData/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_6be47
+        [1/2] D:\\AppData\\RT-ThreadStudio\\platform\\env_released\\env\\tools\\ConEmu\\ConEmu\\..\\..\\..\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\arm-none-eabi-g++.exe   -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Dgcc -O0 -gdwarf-2 -g  -std=gnu++14 -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_6be47.dir/CMakeCXXCompilerABI.cpp.obj -c "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"
+        Using built-in specs.
+        COLLECT_GCC=D:\\AppData\\RT-ThreadStudio\\platform\\env_released\\env\\tools\\ConEmu\\ConEmu\\..\\..\\..\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\arm-none-eabi-g++.exe
+        Target: arm-none-eabi
+        Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-ffunction-sections' '-fdata-sections' '-D' 'gcc' '-O0' '-gdwarf-2' '-g' '-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_6be47.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'
+         d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1plus.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../arm-none-eabi -D__USES_INITFINI__ -D gcc D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mlibarch=armv7e-m+fp -march=armv7e-m+fp -auxbase-strip CMakeFiles/cmTC_6be47.dir/CMakeCXXCompilerABI.cpp.obj -gdwarf-2 -g -O0 -std=gnu++14 -version -fdiagnostics-color=always -ffunction-sections -fdata-sections -o C:\\Users\\Hones\\AppData\\Local\\Temp\\cc8nBGex.s
+        GNU C++14 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+        	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"
+        ignoring duplicate directory "d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard"
+        ignoring duplicate directory "d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"
+        ignoring duplicate directory "d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+        ignoring nonexistent directory "d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"
+        ignoring duplicate directory "d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+        ignoring duplicate directory "d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+        ignoring nonexistent directory "d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../arm-none-eabi/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1
+         d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard
+         d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward
+         d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include
+         d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+         d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+        End of search list.
+        GNU C++14 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+        	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: f8787892a7c5aa84cea58dce52be7118
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-ffunction-sections' '-fdata-sections' '-D' 'gcc' '-O0' '-gdwarf-2' '-g' '-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_6be47.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'
+         d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_6be47.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\Hones\\AppData\\Local\\Temp\\cc8nBGex.s
+        GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+        COMPILER_PATH=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-ffunction-sections' '-fdata-sections' '-D' 'gcc' '-O0' '-gdwarf-2' '-g' '-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_6be47.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\AppData\\RT-ThreadStudio\\platform\\env_released\\env\\tools\\ConEmu\\ConEmu\\..\\..\\..\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\arm-none-eabi-g++.exe -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Dgcc -O0 -gdwarf-2 -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wl,--gc-sections,-Map=rt-thread.map,-cref,-u,Reset_Handler -T D:/Develop/STM32/RTT/STM32F4_DAP/board/linker_scripts/link.lds -v CMakeFiles/cmTC_6be47.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_6be47   && cd ."
+        Using built-in specs.
+        COLLECT_GCC=D:\\AppData\\RT-ThreadStudio\\platform\\env_released\\env\\tools\\ConEmu\\ConEmu\\..\\..\\..\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\arm-none-eabi-g++.exe
+        COLLECT_LTO_WRAPPER=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe
+        Target: arm-none-eabi
+        Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+        COMPILER_PATH=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-D' 'gcc' '-O0' '-gdwarf-2' '-g' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-ffunction-sections' '-fdata-sections' '-T' 'D:/Develop/STM32/RTT/STM32F4_DAP/board/linker_scripts/link.lds' '-v' '-o' 'cmTC_6be47' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'
+         d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Hones\\AppData\\Local\\Temp\\ccYGpPMA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lg -plugin-opt=-pass-through=-lc --sysroot=d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../arm-none-eabi -X -o cmTC_6be47 d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1 -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib --gc-sections -Map=rt-thread.map -cref -u Reset_Handler CMakeFiles/cmTC_6be47.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm --start-group -lgcc -lg -lc --end-group d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o -T D:/Develop/STM32/RTT/STM32F4_DAP/board/linker_scripts/link.lds
+        d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol Reset_Handler; defaulting to 08000000
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-D' 'gcc' '-O0' '-gdwarf-2' '-g' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-ffunction-sections' '-fdata-sections' '-T' 'D:/Develop/STM32/RTT/STM32F4_DAP/board/linker_scripts/link.lds' '-v' '-o' 'cmTC_6be47' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'\x0d
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:130 (message)"
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:25 (PROJECT)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1]
+          add: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard]
+          add: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward]
+          add: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/include]
+          add: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+          add: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include]
+        end of search list found
+        collapse include dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/include/c++/10.3.1]
+        collapse include dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard]
+        collapse include dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/include/c++/10.3.1/backward]
+        collapse include dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/include] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/include]
+        collapse include dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+        collapse include dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/include]
+        implicit include dirs: [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/include/c++/10.3.1;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/include/c++/10.3.1/backward;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/include;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/include-fixed;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:162 (message)"
+      - "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:25 (PROJECT)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-none-eabi-ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'D:/Develop/STM32/RTT/STM32F4_DAP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kj69tr']
+        ignore line: []
+        ignore line: [Run Build Command(s): "D:/AppData/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_6be47]
+        ignore line: [[1/2] D:\\AppData\\RT-ThreadStudio\\platform\\env_released\\env\\tools\\ConEmu\\ConEmu\\..\\..\\..\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\arm-none-eabi-g++.exe   -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Dgcc -O0 -gdwarf-2 -g  -std=gnu++14 -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_6be47.dir/CMakeCXXCompilerABI.cpp.obj -c "D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=D:\\AppData\\RT-ThreadStudio\\platform\\env_released\\env\\tools\\ConEmu\\ConEmu\\..\\..\\..\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\arm-none-eabi-g++.exe]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-ffunction-sections' '-fdata-sections' '-D' 'gcc' '-O0' '-gdwarf-2' '-g' '-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_6be47.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp']
+        ignore line: [ d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1plus.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../arm-none-eabi -D__USES_INITFINI__ -D gcc D:/AppData/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mlibarch=armv7e-m+fp -march=armv7e-m+fp -auxbase-strip CMakeFiles/cmTC_6be47.dir/CMakeCXXCompilerABI.cpp.obj -gdwarf-2 -g -O0 -std=gnu++14 -version -fdiagnostics-color=always -ffunction-sections -fdata-sections -o C:\\Users\\Hones\\AppData\\Local\\Temp\\cc8nBGex.s]
+        ignore line: [GNU C++14 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"]
+        ignore line: [ignoring duplicate directory "d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard"]
+        ignore line: [ignoring duplicate directory "d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"]
+        ignore line: [ignoring duplicate directory "d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"]
+        ignore line: [ignoring nonexistent directory "d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"]
+        ignore line: [ignoring duplicate directory "d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"]
+        ignore line: [ignoring nonexistent directory "d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../arm-none-eabi/usr/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1]
+        ignore line: [ d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard]
+        ignore line: [ d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward]
+        ignore line: [ d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include]
+        ignore line: [ d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+        ignore line: [ d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: f8787892a7c5aa84cea58dce52be7118]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-ffunction-sections' '-fdata-sections' '-D' 'gcc' '-O0' '-gdwarf-2' '-g' '-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_6be47.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp']
+        ignore line: [ d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_6be47.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\Hones\\AppData\\Local\\Temp\\cc8nBGex.s]
+        ignore line: [GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621]
+        ignore line: [COMPILER_PATH=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-ffunction-sections' '-fdata-sections' '-D' 'gcc' '-O0' '-gdwarf-2' '-g' '-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_6be47.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp']
+        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\AppData\\RT-ThreadStudio\\platform\\env_released\\env\\tools\\ConEmu\\ConEmu\\..\\..\\..\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\arm-none-eabi-g++.exe -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Dgcc -O0 -gdwarf-2 -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wl --gc-sections -Map=rt-thread.map -cref -u Reset_Handler -T D:/Develop/STM32/RTT/STM32F4_DAP/board/linker_scripts/link.lds -v CMakeFiles/cmTC_6be47.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_6be47   && cd ."]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=D:\\AppData\\RT-ThreadStudio\\platform\\env_released\\env\\tools\\ConEmu\\ConEmu\\..\\..\\..\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\arm-none-eabi-g++.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) ]
+        ignore line: [COMPILER_PATH=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/]
+        ignore line: [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-D' 'gcc' '-O0' '-gdwarf-2' '-g' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-ffunction-sections' '-fdata-sections' '-T' 'D:/Develop/STM32/RTT/STM32F4_DAP/board/linker_scripts/link.lds' '-v' '-o' 'cmTC_6be47' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp']
+        link line: [ d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Hones\\AppData\\Local\\Temp\\ccYGpPMA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lg -plugin-opt=-pass-through=-lc --sysroot=d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../arm-none-eabi -X -o cmTC_6be47 d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1 -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib --gc-sections -Map=rt-thread.map -cref -u Reset_Handler CMakeFiles/cmTC_6be47.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm --start-group -lgcc -lg -lc --end-group d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o -T D:/Develop/STM32/RTT/STM32F4_DAP/board/linker_scripts/link.lds]
+          arg [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll] ==> ignore
+          arg [-plugin-opt=d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\Hones\\AppData\\Local\\Temp\\ccYGpPMA.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lg] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [--sysroot=d:\\appdata\\rt-threadstudio\\platform\\env_released\\env\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\../arm-none-eabi] ==> ignore
+          arg [-X] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_6be47] ==> ignore
+          arg [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o] ==> obj [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o]
+          arg [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o] ==> obj [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o]
+          arg [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o] ==> obj [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o]
+          arg [-Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard] ==> dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard]
+          arg [-Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard] ==> dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard]
+          arg [-Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard] ==> dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard]
+          arg [-Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1] ==> dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1]
+          arg [-Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc] ==> dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc]
+          arg [-Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib] ==> dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib]
+          arg [-Ld:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib] ==> dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib]
+          arg [--gc-sections] ==> ignore
+          arg [-Map=rt-thread.map] ==> ignore
+          arg [-cref] ==> ignore
+          arg [-u] ==> ignore
+          arg [Reset_Handler] ==> ignore
+          arg [CMakeFiles/cmTC_6be47.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [--start-group] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lg] ==> lib [g]
+          arg [-lc] ==> lib [c]
+          arg [--end-group] ==> ignore
+          arg [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o] ==> obj [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o]
+          arg [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o] ==> obj [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o]
+          arg [-T] ==> ignore
+          arg [D:/Develop/STM32/RTT/STM32F4_DAP/board/linker_scripts/link.lds] ==> ignore
+        collapse obj [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o]
+        collapse obj [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o]
+        collapse obj [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o]
+        collapse obj [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o]
+        collapse obj [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o]
+        collapse library dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard]
+        collapse library dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/lib/thumb/v7e-m+fp/hard]
+        collapse library dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/lib/thumb/v7e-m+fp/hard]
+        collapse library dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1]
+        collapse library dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc]
+        collapse library dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/lib]
+        collapse library dir [d:/appdata/rt-threadstudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/../arm-none-eabi/lib] ==> [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/lib]
+        implicit libs: [stdc++;m;gcc;g;c]
+        implicit objs: [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o]
+        implicit dirs: [D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/lib/thumb/v7e-m+fp/hard;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc/arm-none-eabi/10.3.1;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/lib/gcc;D:/AppData/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/arm-none-eabi/lib]
+        implicit fwks: []
+      
+      
+...
