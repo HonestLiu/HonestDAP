@@ -4,25 +4,35 @@
 
 #include <rtthread.h>
 #include "dap_main.h"
+#include "DAP.h"
+#include "swd_download_file.h"
 
 #define DAP_THREAD_PRIORITY         30
 #define DAP_THREAD_TIMESLICE        20
 
 static uint32_t IDCODE = 0x00000000;
+static struct rt_thread dap_thread;
 char volatile current_dap_mode = 0;//DAP当前的模式
-
+extern DAP_Data_t DAP_Data;//DAP数据结构体
 extern chry_ringbuffer_t g_uartrx;
+
+extern uint8_t swd_read_idcode(uint32_t *id);
+
+void soft_reset_target(void);
+
+static void ID_timeout(void);
 
 rt_align(RT_ALIGN_SIZE)
 __attribute__((section (".TCM"))) static char dap_thread_stack[1024];
-
-static struct rt_thread dap_thread;
 
 /* DAPLINK 线程 入口 */
 static void dap_thread_entry(void *param) {
     while (1) {
         chry_dap_handle();
         chry_dap_usb2uart_handle();
+        if ((rt_tick_get() % 300 == 0) && (is_on_offline_swd_downloading() == 0)) {
+            ID_timeout();
+        }
     }
 }
 
@@ -41,3 +51,43 @@ int dap_thread_startup(void) {
 }
 
 INIT_APP_EXPORT(dap_thread_startup);
+
+void soft_reset_target(void) {
+    static uint32_t val;
+    if (current_dap_mode == 1) {
+        // Perform a soft reset
+        if (!swd_read_word((0xe000e000) + 0x0D0C, &val)) {
+            rt_kprintf("swd_read_word is %x\r\n", val);
+            return;
+        }
+
+        if (!swd_write_word((0xe000e000) + 0x0D0C,
+                            0x05FA0000 | (val & SCB_AIRCR_PRIGROUP_Msk)
+                            | 0x00000004)) {
+            rt_kprintf("swd_write_word is %x\r\n", val);
+            return;
+        }
+    }
+    rt_kprintf("!!swd_read_word is %x\r\n", val);
+}
+
+uint32_t get_idcode(void) {
+    return IDCODE;
+}
+
+/* 定时器 1 超时函数 */
+static void ID_timeout(void) {
+    static uint32_t id = 0;
+
+    if (current_dap_mode == 1) {
+        if (swd_read_idcode(&id)) {
+            IDCODE = id;
+            // rt_kprintf("chip id code is %x\r\n", id);
+        } else {
+            IDCODE = 0x00000000;
+            // rt_kprintf("no chip\r\n");
+            swd_init_debug();
+        }
+    }
+}
+

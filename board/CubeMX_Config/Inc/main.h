@@ -31,7 +31,9 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#define LCKFB_DAPLINK_VERSION_MAJOR '1'
+#define LCKFB_DAPLINK_VERSION_MINOR '0'
+#define LCKFB_DAPLINK_VERSION_PATCH '2'
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

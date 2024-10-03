@@ -202,18 +202,52 @@ const uint8_t cmsisdap_descriptor[] = {
         'A', 0x00,                  /* wcChar18 */
         'P', 0x00,                  /* wcChar19 */
         /* String 3 (Serial Number) */
-        0x16,                       /* bLength */
-        USB_DESCRIPTOR_TYPE_STRING, /* bDescriptorType */
-        '2', 0x00,                  /* wcChar0 */
-        '0', 0x00,                  /* wcChar1 */
-        '2', 0x00,                  /* wcChar2 */
-        '2', 0x00,                  /* wcChar3 */
-        '1', 0x00,                  /* wcChar4 */
-        '2', 0x00,                  /* wcChar5 */
-        '3', 0x00,                  /* wcChar6 */
-        '4', 0x00,                  /* wcChar7 */
-        '5', 0x00,                  /* wcChar8 */
-        '6', 0x00,                  /* wcChar9 */
+        0x58,                       // bLength
+        USB_DESCRIPTOR_TYPE_STRING, // bDescriptorType
+        // 32bit max 4,294,967,295
+        'L', 0,                         // wcChar0
+        'C', 0,                         // wcChar1
+        'K', 0,                         // wcChar2
+        'F', 0,                         // wcChar3
+        'B', 0,                         // wcChar4
+        '-', 0,                         // wcChar5
+        'V', 0,                         // wcChar6
+        LCKFB_DAPLINK_VERSION_MAJOR, 0, // wcChar7
+        '.', 0,                         // wcChar8
+        LCKFB_DAPLINK_VERSION_MINOR, 0, // wcChar9
+        '.', 0,                         // wcChar10
+        LCKFB_DAPLINK_VERSION_PATCH, 0, // wcChar11
+        '-', 0,                         // wcChar12
+        '0', 0,                         // wcChar13
+        '0', 0,                         // wcChar14
+        '0', 0,                         // wcChar15
+        '0', 0,                         // wcChar16
+        '0', 0,                         // wcChar17
+        '0', 0,                         // wcChar18
+        '0', 0,                         // wcChar19
+        '0', 0,                         // wcChar20
+        '0', 0,                         // wcChar21
+        '0', 0,                         // wcChar22
+        '0', 0,                         // wcChar23
+        '0', 0,                         // wcChar24
+        '0', 0,                         // wcChar25
+        '0', 0,                         // wcChar26
+        '0', 0,                         // wcChar27
+        '0', 0,                         // wcChar28
+        '0', 0,                         // wcChar29
+        '0', 0,                         // wcChar30
+        '0', 0,                         // wcChar31
+        '0', 0,                         // wcChar32
+        '0', 0,                         // wcChar33
+        '0', 0,                         // wcChar34
+        '0', 0,                         // wcChar35
+        '0', 0,                         // wcChar36
+        '0', 0,                         // wcChar37
+        '0', 0,                         // wcChar38
+        '0', 0,                         // wcChar39
+        '0', 0,                         // wcChar40
+        '0', 0,                         // wcChar41
+        '0', 0,                         // wcChar42
 #ifdef CONFIG_USB_HS
         /* Device Qualifier */
     0x0a,
@@ -309,7 +343,6 @@ static void usbd_event_handler(uint8_t busid, uint8_t event) {
 /**********************************DAP LINK相关设置***************************************/
 //DAPLink数据发送完成后的回调函数
 void dap_out_callback(uint8_t busid, uint8_t ep, uint32_t nbytes) {
-    USB_LOG_RAW("actual out len:%d\r\n", nbytes);
     (void) busid;
     if (USB_Request[USB_RequestIndexI][0] == ID_DAP_TransferAbort) {//如果收到的数据是ID_DAP_TransferAbort,即接收终止
         DAP_TransferAbort = 1U;
@@ -378,6 +411,7 @@ void usbd_cdc_acm_bulk_in(uint8_t busid, uint8_t ep, uint32_t nbytes) {
     }
 }
 
+/**********************************USB端点定义****************************************/
 
 struct usbd_endpoint dap_out_ep = {
         .ep_addr = DAP_OUT_EP,
@@ -413,7 +447,7 @@ static USB_NOCACHE_RAM_SECTION USB_MEM_ALIGNX uint8_t usbrx_ringbuffer[CONFIG_US
 static __attribute__((section (".TCM"))) USB_MEM_ALIGNX uint8_t uartrx_ringbuffer[CONFIG_UARTRX_RINGBUF_SIZE];
 
 
-/**********************************W USB****************************************/
+/**********************************WIN USB(做DAP通信)****************************************/
 //DAP状态初始化
 static void chry_dap_state_init(void) {
     // Initialize variables
@@ -524,7 +558,7 @@ void chry_dap_handle(void) {
     }
 }
 
-/******************************************虚拟串口**************************************/
+/******************************************CDC 虚拟串口**************************************/
 //CDC 设置串口参数
 void usbd_cdc_acm_set_line_coding(uint8_t busid, uint8_t intf, struct cdc_line_coding *line_coding) {
     if (memcpy(line_coding, (uint8_t *) &g_cdc_lincoding, sizeof(struct cdc_line_coding)) != 0) {
@@ -617,7 +651,7 @@ uint8_t get_cdc_g_line_coding_bDataBits(void) {
     return g_cdc_lincoding.bDataBits;
 }
 
-// 将USB接收到数据使用DMA发送出去
+// 将USB接收到数据使用串口发送出去
 __WEAK void serial_send_data(uint8_t *data, uint16_t len) {
 
 }

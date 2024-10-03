@@ -173,10 +173,14 @@ SET(PROJECT_SOURCES
         packages/DAPLink/Source/SWO.c
         packages/DAPLink/Source/JTAG_DP.c
         packages/DAPLink/Source/swd_host.c
+        packages/flmparse/flmparse.c
+        packages/DAPLink/Source/SWD_flash.c
+        packages/offline_download/swd_download_file.c
 
 )
 
 INCLUDE_DIRECTORIES(packages/DAPLink/Include)
+INCLUDE_DIRECTORIES(packages/offline_download)
 
 LINK_DIRECTORIES(
 )
