@@ -5,10 +5,13 @@
 #include "stm32f407xx.h"
 #include <rtthread.h>
 
+#include "swd_host.h"
+#include "DAP_config.h"
+#include "DAP.h"
 
 //DAP WINUSB
-#define WINUSB_IN_EP  0x81
-#define WINUSB_OUT_EP 0x01
+#define DAP_IN_EP  0x81
+#define DAP_OUT_EP 0x01
 
 //虚拟串口的端口
 #define CDC_IN_EP  0x82
@@ -150,16 +153,16 @@ __ALIGN_BEGIN const uint8_t USBD_BinaryObjectStoreDescriptor[] = {
 #endif
 };
 
-const uint8_t winusbv2_descriptor[] = {
+const uint8_t cmsisdap_descriptor[] = {
         USB_DEVICE_DESCRIPTOR_INIT(USB_2_1, 0xEF, 0x02, 0x01, USBD_VID, USBD_PID, 0x0100, 0x01),
         /* Configuration 0 */
         USB_CONFIG_DESCRIPTOR_INIT(USB_CONFIG_SIZE, INTF_NUM, 0x01, USB_CONFIG_BUS_POWERED, USBD_MAX_POWER),
         /* Interface 0 */
         USB_INTERFACE_DESCRIPTOR_INIT(0x00, 0x00, 0x02, 0xFF, 0x00, 0x00, 0x02),
         /* Endpoint OUT 2 */
-        USB_ENDPOINT_DESCRIPTOR_INIT(WINUSB_OUT_EP, USB_ENDPOINT_TYPE_BULK, WINUSB_EP_MPS, 0x00),
+        USB_ENDPOINT_DESCRIPTOR_INIT(DAP_OUT_EP, USB_ENDPOINT_TYPE_BULK, WINUSB_EP_MPS, 0x00),
         /* Endpoint IN 1 */
-        USB_ENDPOINT_DESCRIPTOR_INIT(WINUSB_IN_EP, USB_ENDPOINT_TYPE_BULK, WINUSB_EP_MPS, 0x00),
+        USB_ENDPOINT_DESCRIPTOR_INIT(DAP_IN_EP, USB_ENDPOINT_TYPE_BULK, WINUSB_EP_MPS, 0x00),
         CDC_ACM_DESCRIPTOR_INIT(0x01, CDC_INT_EP, CDC_OUT_EP, CDC_IN_EP, WINUSB_EP_MPS, 0x00),
         /* String 0 (LANGID) */
         USB_LANGID_INIT(USBD_LANGID_STRING),
@@ -233,7 +236,8 @@ USB_NOCACHE_RAM_SECTION USB_MEM_ALIGNX uint8_t write_buffer[2048];
 
 /***************************************************************************/
 #define CONFIG_UARTRX_RINGBUF_SIZE (4 * 1024)
-#define DAP_PACKET_SIZE         64U            //TODO 临时添加，后继添加DAP相关代码后移除
+#define CONFIG_USBRX_RINGBUF_SIZE  (1 * 1024)
+
 static USB_NOCACHE_RAM_SECTION USB_MEM_ALIGNX uint8_t usb_tmpbuffer[DAP_PACKET_SIZE];
 static volatile uint8_t usbrx_idle_flag = 0; //USB RX 空闲状态标识符
 static volatile uint8_t usbtx_idle_flag = 0; //USB TX 空闲状态标识符
@@ -248,6 +252,26 @@ chry_ringbuffer_t g_usbrx;
 volatile struct cdc_line_coding g_cdc_lincoding;
 volatile uint8_t config_uart = 0;
 volatile uint8_t config_uart_transfer = 0;
+
+//DAP相关状态值
+static volatile uint16_t USB_RequestIndexI; // Request  Index In
+static volatile uint16_t USB_RequestIndexO; // Request  Index Out
+static volatile uint16_t USB_RequestCountI; // Request  Count In
+static volatile uint16_t USB_RequestCountO; // Request  Count Out
+static volatile uint8_t USB_RequestIdle;    // Request  Idle  Flag
+
+static volatile uint16_t USB_ResponseIndexI; // Response Index In
+static volatile uint16_t USB_ResponseIndexO; // Response Index Out
+static volatile uint16_t USB_ResponseCountI; // Response Count In
+static volatile uint16_t USB_ResponseCountO; // Response Count Out
+static volatile uint8_t USB_ResponseIdle;    // Response Idle  Flag
+
+//DAP相关缓冲区
+__attribute__ ((aligned (4))) static USB_NOCACHE_RAM_SECTION USB_MEM_ALIGNX uint8_t USB_Request[DAP_PACKET_COUNT][DAP_PACKET_SIZE];  // Request  Buffer
+__attribute__ ((aligned (4))) static USB_NOCACHE_RAM_SECTION USB_MEM_ALIGNX uint8_t USB_Response[DAP_PACKET_COUNT][DAP_PACKET_SIZE]; // Response Buffer
+__attribute__ ((aligned (4))) static uint16_t USB_RespSize[DAP_PACKET_COUNT];                                                        // Response Size
+
+
 /***************************************************************************/
 volatile bool ep_tx_busy_flag = false;
 
@@ -270,8 +294,8 @@ static void usbd_event_handler(uint8_t busid, uint8_t event) {
         case USBD_EVENT_CONFIGURED:
             ep_tx_busy_flag = false;
             /* setup first out ep read transfer */
+            usbd_ep_start_read(busid, DAP_OUT_EP, USB_Request[0], DAP_PACKET_SIZE);//DAPLink
             usbd_ep_start_read(busid, CDC_OUT_EP, usb_tmpbuffer, DAP_PACKET_SIZE);//从CDC_OUT_EP端点读入数据存入usb_tmpbuffer
-            usbd_ep_start_read(busid, WINUSB_OUT_EP, read_buffer, 2048);//TODO DAPLink预留
             break;
         case USBD_EVENT_SET_REMOTE_WAKEUP:
             break;
@@ -282,40 +306,47 @@ static void usbd_event_handler(uint8_t busid, uint8_t event) {
             break;
     }
 }
-
-void usbd_winusb_out(uint8_t busid, uint8_t ep, uint32_t nbytes) {
+/**********************************DAP LINK相关设置***************************************/
+//DAPLink数据发送完成后的回调函数
+void dap_out_callback(uint8_t busid, uint8_t ep, uint32_t nbytes) {
     USB_LOG_RAW("actual out len:%d\r\n", nbytes);
-    // for (int i = 0; i < 100; i++) {
-    //     printf("%02x ", read_buffer[i]);
-    // }
-    // printf("\r\n");
-    usbd_ep_start_write(busid, WINUSB_IN_EP, read_buffer, nbytes);
-    /* setup next out ep read transfer */
-    usbd_ep_start_read(busid, WINUSB_OUT_EP, read_buffer, 2048);
-}
-
-void usbd_winusb_in(uint8_t busid, uint8_t ep, uint32_t nbytes) {
-    USB_LOG_RAW("actual in len:%d\r\n", nbytes);
-
-    if ((nbytes % usbd_get_ep_mps(busid, ep)) == 0 && nbytes) {
-        /* send zlp */
-        usbd_ep_start_write(busid, WINUSB_IN_EP, NULL, 0);
+    (void) busid;
+    if (USB_Request[USB_RequestIndexI][0] == ID_DAP_TransferAbort) {//如果收到的数据是ID_DAP_TransferAbort,即接收终止
+        DAP_TransferAbort = 1U;
     } else {
-        ep_tx_busy_flag = false;
+        USB_RequestIndexI++;//增加读指针
+        if (USB_RequestIndexI == DAP_PACKET_COUNT) {
+            //读指针到达最大值，重置为0
+            USB_RequestIndexI = 0U;
+        }
+        USB_RequestCountI++;//增加读计数
+    }
+
+    if ((uint16_t) (USB_RequestCountI - USB_RequestCountO) != DAP_PACKET_COUNT) {
+        //如果读计数和写计数不相等，继续读取数据
+        usbd_ep_start_read(busid, DAP_OUT_EP, USB_Request[USB_RequestIndexI], DAP_PACKET_SIZE);
+    } else {
+        //如果读计数和写计数相等，说明缓冲区已满
+        USB_RequestIdle = 1U;
     }
 }
 
-struct usbd_endpoint winusb_out_ep1 = {
-        .ep_addr = WINUSB_OUT_EP,
-        .ep_cb = usbd_winusb_out
-};
+//DAPLink数据接收完成后的回调函数
+void dap_in_callback(uint8_t busid, uint8_t ep, uint32_t nbytes) {
+    (void) busid;
+    if (USB_ResponseCountI != USB_ResponseCountO) {
+        usbd_ep_start_write(busid, DAP_IN_EP, USB_Response[USB_ResponseIndexO], USB_RespSize[USB_ResponseIndexO]);
+        USB_ResponseIndexO++;
+        if (USB_ResponseIndexO == DAP_PACKET_COUNT) {
+            USB_ResponseIndexO = 0U;
+        }
+        USB_ResponseCountO++;
+    } else {
+        USB_ResponseIdle = 1U;
+    }
+}
 
-struct usbd_endpoint winusb_in_ep1 = {
-        .ep_addr = WINUSB_IN_EP,
-        .ep_cb = usbd_winusb_in
-};
-
-/********************************************虚拟串口功能************************/
+/********************************************虚拟串口相关配置************************/
 //CDC 接收到数据回调函数
 void usbd_cdc_acm_bulk_out(uint8_t busid, uint8_t ep, uint32_t nbytes) {
     chry_ringbuffer_write(&g_usbrx, usb_tmpbuffer, nbytes);//将usb_tmpbuffer中的数据写入环形缓冲区
@@ -347,6 +378,17 @@ void usbd_cdc_acm_bulk_in(uint8_t busid, uint8_t ep, uint32_t nbytes) {
     }
 }
 
+
+struct usbd_endpoint dap_out_ep = {
+        .ep_addr = DAP_OUT_EP,
+        .ep_cb = dap_out_callback
+};
+
+struct usbd_endpoint dap_in_ep = {
+        .ep_addr = DAP_IN_EP,
+        .ep_cb = dap_in_callback
+};
+
 //接收通过USB获取的数据，将收到的数据通过Uart发送给设备
 static struct usbd_endpoint cdc_out_ep = {
         .ep_addr = CDC_OUT_EP,
@@ -360,7 +402,7 @@ static struct usbd_endpoint cdc_in_ep = {
 };
 /**************************************************************************/
 //接口定义
-struct usbd_interface winusb_intf;
+struct usbd_interface dap_intf;
 struct usbd_interface intf1;
 struct usbd_interface intf2;
 
@@ -370,7 +412,23 @@ struct usbd_interface intf2;
 static USB_NOCACHE_RAM_SECTION USB_MEM_ALIGNX uint8_t usbrx_ringbuffer[CONFIG_USBRX_RINGBUF_SIZE];
 static __attribute__((section (".TCM"))) USB_MEM_ALIGNX uint8_t uartrx_ringbuffer[CONFIG_UARTRX_RINGBUF_SIZE];
 
+
 /**********************************W USB****************************************/
+//DAP状态初始化
+static void chry_dap_state_init(void) {
+    // Initialize variables
+    USB_RequestIndexI = 0U;
+    USB_RequestIndexO = 0U;
+    USB_RequestCountI = 0U;
+    USB_RequestCountO = 0U;
+    USB_RequestIdle = 1U;
+    USB_ResponseIndexI = 0U;
+    USB_ResponseIndexO = 0U;
+    USB_ResponseCountI = 0U;
+    USB_ResponseCountO = 0U;
+    USB_ResponseIdle = 1U;
+}
+
 struct usb_msosv2_descriptor msosv2_desc = {
         .vendor_code = USBD_WINUSB_VENDOR_CODE,
         .compat_id = USBD_WinUSBDescriptorSetDescriptor,
@@ -384,21 +442,24 @@ struct usb_bos_descriptor bos_desc = {
 
 /********************************************************************************/
 
-void chry_dap_init(uint8_t busid, uintptr_t reg_base){
+void chry_dap_init(uint8_t busid, uintptr_t reg_base) {
 
     //初始化环形缓冲区
     chry_ringbuffer_init(&g_uartrx, uartrx_ringbuffer, CONFIG_UARTRX_RINGBUF_SIZE);
     chry_ringbuffer_init(&g_usbrx, usbrx_ringbuffer, CONFIG_USBRX_RINGBUF_SIZE);
 
+    swd_init();//初始化SWD
+    chry_dap_state_init();//初始化DAP状态
+
     //注册USB描述符
-    usbd_desc_register(busid, winusbv2_descriptor);
+    usbd_desc_register(busid, cmsisdap_descriptor);
     usbd_bos_desc_register(busid, &bos_desc);
     usbd_msosv2_desc_register(busid, &msosv2_desc);
 
     /*!< winusb */
-    usbd_add_interface(busid, &winusb_intf);
-    usbd_add_endpoint(busid, &winusb_out_ep1);
-    usbd_add_endpoint(busid, &winusb_in_ep1);
+    usbd_add_interface(busid, &dap_intf);
+    usbd_add_endpoint(busid, &dap_out_ep);
+    usbd_add_endpoint(busid, &dap_in_ep);
 
     /*!< cdc acm，用于虚拟串口 */
     usbd_add_interface(busid, usbd_cdc_acm_init_intf(busid, &intf1));
@@ -409,6 +470,61 @@ void chry_dap_init(uint8_t busid, uintptr_t reg_base){
     usbd_initialize(busid, reg_base, usbd_event_handler);
 }
 
+/******************************************DAP Link************************************/
+void chry_dap_handle(void) {
+    uint32_t n;
+
+    while (USB_RequestCountI != USB_RequestCountO) {
+        n = USB_RequestIndexO;//获取写指针
+        while (USB_Request[n][0] == ID_DAP_QueueCommands) {
+            USB_Request[n][0] = ID_DAP_ExecuteCommands;//执行DAP命令
+            n++;
+            if (n == DAP_PACKET_COUNT) {
+                n = 0U;
+            }
+            if (n == USB_RequestIndexI) {
+                //TODO 待定
+            }
+        }
+        //执行 DAP 命令（处理请求并准备响应）
+        USB_RespSize[USB_ResponseIndexI] = (uint16_t) DAP_ExecuteCommand(USB_Request[USB_RequestIndexO],
+                                                                         USB_Response[USB_ResponseIndexI]);//执行DAP命令
+        // 更新请求索引和计数
+        USB_RequestIndexO++;
+        if (USB_RequestIndexO == DAP_PACKET_COUNT) {
+            USB_RequestIndexO = 0U;
+        }
+        USB_RequestCountO++;
+
+        if (USB_RequestIdle) {
+            if ((uint16_t) (USB_RequestCountI - USB_RequestCountO) != DAP_PACKET_COUNT) {
+                USB_RequestIdle = 0U;
+                usbd_ep_start_read(0, DAP_OUT_EP, USB_Request[USB_RequestIndexI], DAP_PACKET_SIZE);
+            }
+        }
+
+        //更新响应索引和计数
+        USB_ResponseIndexI++;
+        if (USB_ResponseIndexI == DAP_PACKET_COUNT) {
+            USB_ResponseIndexI = 0U;
+        }
+        USB_ResponseCountI++;
+
+        if (USB_ResponseIdle) {
+            if (USB_ResponseCountI != USB_ResponseCountO) {
+                n = USB_ResponseIndexO++;
+                if (USB_ResponseIndexO == DAP_PACKET_COUNT) {
+                    USB_ResponseIndexO = 0U;
+                }
+                USB_ResponseCountO++;
+                USB_ResponseIdle = 0U;
+                usbd_ep_start_write(0, DAP_IN_EP, USB_Response[n], USB_RespSize[n]);
+            }
+        }
+    }
+}
+
+/******************************************虚拟串口**************************************/
 //CDC 设置串口参数
 void usbd_cdc_acm_set_line_coding(uint8_t busid, uint8_t intf, struct cdc_line_coding *line_coding) {
     if (memcpy(line_coding, (uint8_t *) &g_cdc_lincoding, sizeof(struct cdc_line_coding)) != 0) {
@@ -507,6 +623,36 @@ __WEAK void serial_send_data(uint8_t *data, uint16_t len) {
 }
 
 //串口配置回调函数
-__WEAK void chry_dap_usb2uart_uart_config_callback(struct cdc_line_coding *line_coding)
-{
+__WEAK void chry_dap_usb2uart_uart_config_callback(struct cdc_line_coding *line_coding) {
 }
+
+#ifdef CONFIG_CHERRYDAP_USE_MSC
+#define BLOCK_SIZE  512
+#define BLOCK_COUNT 10
+
+typedef struct
+{
+    uint8_t BlockSpace[BLOCK_SIZE];
+} BLOCK_TYPE;
+
+BLOCK_TYPE mass_block[BLOCK_COUNT];
+
+void usbd_msc_get_cap(uint8_t lun, uint32_t *block_num, uint16_t *block_size)
+{
+    *block_num = 1000; //Pretend having so many buffer,not has actually.
+    *block_size = BLOCK_SIZE;
+}
+int usbd_msc_sector_read(uint32_t sector, uint8_t *buffer, uint32_t length)
+{
+    if (sector < 10)
+        memcpy(buffer, mass_block[sector].BlockSpace, length);
+    return 0;
+}
+
+int usbd_msc_sector_write(uint32_t sector, uint8_t *buffer, uint32_t length)
+{
+    if (sector < 10)
+        memcpy(mass_block[sector].BlockSpace, buffer, length);
+    return 0;
+}
+#endif

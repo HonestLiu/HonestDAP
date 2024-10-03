@@ -129,8 +129,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "D:/Develop/STM32/RTT/STM32F4_DAP/cmake-build-debug",
-		"source" : "D:/Develop/STM32/RTT/STM32F4_DAP"
+		"build" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/cmake-build-debug",
+		"source" : "D:/Develop/STM32/RTT/STM32F4_DAPV3"
 	},
 	"version" : 
 	{

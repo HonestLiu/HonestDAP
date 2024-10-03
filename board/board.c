@@ -18,7 +18,7 @@ void OTG_FS_IRQHandler(void) {
 
 
 int usbd_init(void) {
-   extern void chry_dap_init(uint8_t busid, uintptr_t reg_base);
+    extern void chry_dap_init(uint8_t busid, uintptr_t reg_base);
     //extern void winusbv2_init(uint8_t busid, uintptr_t reg_base);
     chry_dap_init(0, USB_OTG_FS_PERIPH_BASE);
     return 0;

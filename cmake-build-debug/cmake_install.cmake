@@ -1,4 +1,4 @@
-# Install script for directory: D:/Develop/STM32/RTT/STM32F4_DAP
+# Install script for directory: D:/Develop/STM32/RTT/STM32F4_DAPV3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Develop/STM32/RTT/STM32F4_DAP/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Develop/STM32/RTT/STM32F4_DAPV3/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

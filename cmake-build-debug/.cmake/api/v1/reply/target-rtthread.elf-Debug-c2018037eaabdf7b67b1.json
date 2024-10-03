@@ -26,7 +26,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 181,
+				"line" : 189,
 				"parent" : 0
 			},
 			{
@@ -39,6 +39,12 @@
 				"command" : 2,
 				"file" : 0,
 				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 179,
 				"parent" : 0
 			}
 		]
@@ -83,159 +89,163 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/applications"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/applications"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/common"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/common"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/core"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/core"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/class/cdc"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/class/cdc"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/class/msc"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/class/msc"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/class/hid"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/class/hid"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/class/audio"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/class/audio"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/class/video"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/class/video"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/class/wireless"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/class/wireless"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/class/dfu"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/class/dfu"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/class/midi"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/class/midi"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/class/vendor/net"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/class/vendor/net"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/class/vendor/serial"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/class/vendor/serial"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/osal"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/osal"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/libc/compilers/common/include"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/libc/compilers/common/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/libc/compilers/newlib"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/libc/compilers/newlib"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/drivers/include"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/drivers/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/board"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/board"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/board/CubeMX_Config/Inc"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/board/CubeMX_Config/Inc"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/board/ports"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/board/ports"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/libraries/HAL_Drivers/drivers"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/libraries/HAL_Drivers/drivers"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/libraries/HAL_Drivers/drivers/config"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/libraries/HAL_Drivers/drivers/config"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/libraries/HAL_Drivers"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/libraries/HAL_Drivers"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/libraries/HAL_Drivers/CMSIS/Include"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/libraries/HAL_Drivers/CMSIS/Include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/dfs/dfs_v1/include"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/dfs/dfs_v1/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/dfs/dfs_v1/filesystems/devfs"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/dfs/dfs_v1/filesystems/devfs"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/dfs/dfs_v1/filesystems/elmfat"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/dfs/dfs_v1/filesystems/elmfat"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/dfs/dfs_v1/filesystems/romfs"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/dfs/dfs_v1/filesystems/romfs"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/finsh"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/finsh"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/."
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/."
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/include"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/libcpu/arm/common"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/libcpu/arm/common"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/libcpu/arm/cortex-m4"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/libcpu/arm/cortex-m4"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/libc/posix/io/epoll"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/libc/posix/io/epoll"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/libc/posix/io/eventfd"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/libc/posix/io/eventfd"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/libc/posix/io/poll"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/libc/posix/io/poll"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/libc/posix/ipc"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/libc/posix/ipc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/DAPLink/Include"
 				}
 			],
 			"language" : "C",
@@ -327,7 +337,12 @@
 				85,
 				87,
 				88,
-				89
+				89,
+				91,
+				92,
+				93,
+				94,
+				95
 			]
 		},
 		{
@@ -368,159 +383,163 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/applications"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/applications"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/common"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/common"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/core"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/core"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/class/cdc"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/class/cdc"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/class/msc"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/class/msc"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/class/hid"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/class/hid"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/class/audio"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/class/audio"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/class/video"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/class/video"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/class/wireless"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/class/wireless"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/class/dfu"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/class/dfu"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/class/midi"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/class/midi"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/class/vendor/net"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/class/vendor/net"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/class/vendor/serial"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/class/vendor/serial"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/packages/CherryUSB-v1.4.0/osal"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/CherryUSB-v1.4.0/osal"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/libc/compilers/common/include"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/libc/compilers/common/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/libc/compilers/newlib"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/libc/compilers/newlib"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/drivers/include"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/drivers/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/board"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/board"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/board/CubeMX_Config/Inc"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/board/CubeMX_Config/Inc"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/board/ports"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/board/ports"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/libraries/HAL_Drivers/drivers"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/libraries/HAL_Drivers/drivers"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/libraries/HAL_Drivers/drivers/config"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/libraries/HAL_Drivers/drivers/config"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/libraries/HAL_Drivers"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/libraries/HAL_Drivers"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/libraries/HAL_Drivers/CMSIS/Include"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/libraries/HAL_Drivers/CMSIS/Include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/dfs/dfs_v1/include"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/dfs/dfs_v1/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/dfs/dfs_v1/filesystems/devfs"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/dfs/dfs_v1/filesystems/devfs"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/dfs/dfs_v1/filesystems/elmfat"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/dfs/dfs_v1/filesystems/elmfat"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/dfs/dfs_v1/filesystems/romfs"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/dfs/dfs_v1/filesystems/romfs"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/finsh"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/finsh"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/."
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/."
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/include"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/libcpu/arm/common"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/libcpu/arm/common"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/libcpu/arm/cortex-m4"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/libcpu/arm/cortex-m4"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/libraries/STM32F4xx_HAL/STM32F4xx_HAL_Driver/Inc"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/libraries/STM32F4xx_HAL/CMSIS/Device/ST/STM32F4xx/Include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/libc/posix/io/epoll"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/libc/posix/io/epoll"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/libc/posix/io/eventfd"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/libc/posix/io/eventfd"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/libc/posix/io/poll"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/libc/posix/io/poll"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/Develop/STM32/RTT/STM32F4_DAP/rt-thread/components/libc/posix/ipc"
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/rt-thread/components/libc/posix/ipc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Develop/STM32/RTT/STM32F4_DAPV3/packages/DAPLink/Include"
 				}
 			],
 			"language" : "ASM",
@@ -541,7 +560,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wl,--gc-sections,-Map=rt-thread.map,-cref,-u,Reset_Handler -T D:/Develop/STM32/RTT/STM32F4_DAP/board/linker_scripts/link.lds",
+				"fragment" : "-mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wl,--gc-sections,-Map=rt-thread.map,-cref,-u,Reset_Handler -T D:/Develop/STM32/RTT/STM32F4_DAPV3/board/linker_scripts/link.lds",
 				"role" : "flags"
 			},
 			{
@@ -656,7 +675,12 @@
 				85,
 				87,
 				88,
-				89
+				89,
+				91,
+				92,
+				93,
+				94,
+				95
 			]
 		},
 		{
@@ -671,7 +695,8 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				86
+				86,
+				90
 			]
 		}
 	],
@@ -1214,6 +1239,41 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "applications/dap_loop.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "board/CubeMX_Config/Drivers/CMSIS/DAP/Firmware/Include/DAP.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "packages/DAPLink/Source/DAP.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "packages/DAPLink/Source/SW_DP.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "packages/DAPLink/Source/SWO.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "packages/DAPLink/Source/JTAG_DP.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "packages/DAPLink/Source/swd_host.c",
 			"sourceGroupIndex" : 0
 		}
 	],
