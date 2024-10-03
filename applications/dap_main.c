@@ -205,18 +205,18 @@ const uint8_t cmsisdap_descriptor[] = {
         0x58,                       // bLength
         USB_DESCRIPTOR_TYPE_STRING, // bDescriptorType
         // 32bit max 4,294,967,295
-        'L', 0,                         // wcChar0
-        'C', 0,                         // wcChar1
-        'K', 0,                         // wcChar2
-        'F', 0,                         // wcChar3
-        'B', 0,                         // wcChar4
-        '-', 0,                         // wcChar5
-        'V', 0,                         // wcChar6
-        LCKFB_DAPLINK_VERSION_MAJOR, 0, // wcChar7
+        'H', 0,                         // wcChar0
+        'L', 0,                         // wcChar1
+        '-', 0,                         // wcChar2
+        'L', 0,                         // wcChar3
+        'I', 0,                         // wcChar4
+        'N', 0,                         // wcChar5
+        'K', 0,                         // wcChar6
+        HONEST_LINK_VERSION_MAJOR, 0, // wcChar7
         '.', 0,                         // wcChar8
-        LCKFB_DAPLINK_VERSION_MINOR, 0, // wcChar9
+        HONEST_LINK_VERSION_MINOR, 0, // wcChar9
         '.', 0,                         // wcChar10
-        LCKFB_DAPLINK_VERSION_PATCH, 0, // wcChar11
+        HONEST_LINK_VERSION_PATCH, 0, // wcChar11
         '-', 0,                         // wcChar12
         '0', 0,                         // wcChar13
         '0', 0,                         // wcChar14
