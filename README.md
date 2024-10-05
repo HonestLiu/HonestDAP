@@ -10,7 +10,7 @@
 
 **项目简介:** 这个项目是基于STM32F407实现的，支持DAPLink功能和虚拟串口功能。USB技术部分使用的是CherryUSB，DAPLink方面使用的是Arm开源的方案。其本质可以视为我尝试对立创DAPLink技术的拆解，但由于时间问题未能完成完成，暂时先这样。
 
-- **DAPLINL:** 其与电脑的通信使用的是WinUSB,通过WinUSB的端点接收和发送DAP命令，至于DAP命令与待烧录单片机的通信，这里调用的是DAPLINK源码中的`DAP_ExecuteCommand`函数发送的
+- **DAPLINK:** 其与电脑的通信使用的是WinUSB,通过WinUSB的端点接收和发送DAP命令，至于DAP命令与待烧录单片机的通信，这里调用的是DAPLINK源码中的`DAP_ExecuteCommand`函数发送的
 
 - **虚拟串口:** 其与电脑的通信使用的是USB的CDC，DAP方面使用Uart与MCU通信，将接收到的数据通过CDC发送给电脑，电脑也同样可以通过CDC给DAP发送数据，再通过DAP的Uart发送给MCU
 
@@ -416,7 +416,7 @@ void usbd_cdc_acm_bulk_out(uint8_t busid, uint8_t ep, uint32_t nbytes)
 
 ## 三.注意事项
 
-- 如无法使用CLion打开，可以直接从网盘下载项目打开
+- 如无法使用CLion打开，可以直接从网盘或从Releases下载项目打开
 
   [百度网盘](https://pan.baidu.com/s/1lDzyoXoS1KrU3V6syQQMeQ?pwd=j9j9) 
 
